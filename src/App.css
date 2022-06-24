@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+.jumbotron {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom right, #b3b9bb, #006181);
+    padding: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.jumbotron h1 {
+    color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.jumbotron form {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.jumbotron .form input {
+    border: none;
+    padding: 5px;
+    width: 350px;
+    margin: 2px;
 }
 
-.App-link {
-  color: #61dafb;
+.jumbotron .form .button-submit {
+    border: none;
+    background-color: #006181;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    margin: 2px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid rgb(199, 199, 199);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    /* background-image: linear-gradient(to bottom right, #96b3c7, #589cb3); */
+    /* border-color: #295d70; */
+}
+
+.card .text {
+    flex: 3;
+}
+
+.button-action {
+    flex: 1;
+}
+
+.btn-edit {
+    border: none;
+    background-color: #518ca0;
+    padding: 8px;
+    border-radius: 5px;
+    color: aliceblue;
+    margin: 1px;
+}
+
+.btn-delete {
+    border: none;
+    background-color: rgb(176, 156, 197);
+    padding: 8px;
+    border-radius: 5px;
+    color: aliceblue;
+    margin: 1px;
+}
+
+.btn-delete:hover {
+    transform: scale(0.9);
+}
+
+.btn-edit:hover {
+    transform: scale(0.9);
+}
+
+.button-submit:hover {
+    transform: scale(0.9);
 }
